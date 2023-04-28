@@ -1,0 +1,278 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    height: calc(100vh - 50px);
+    margin: 50px 0 0 0;
+    padding: 0;
+    background-image: linear-gradient(lightgray, lightblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    padding: 0 50px;
+}
+
+/* Control box styling */
+
+.controlsCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid gray;
+    border-radius: 3px;
+    max-height: 500px;
+    width: 500px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+.yearCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+    gap: 10px;
+}
+.seasonSelect {
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 40px;
+    width: 100%;
+}
+.teamCon {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(8, 1fr);
+    gap: 0;
+    min-height: 100%;
+    max-width: 100%;
+    border: 2px solid darkgrey;
+    border-radius: 2px;
+}
+.teamGrid {
+    box-sizing: border-box;
+    border-spacing: 0;
+    border: 1px solid lightgray;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    max-width: 100%;
+    pointer-events: all;
+}
+.teamGrid > img:hover {
+    opacity: 0.5;
+}
+.teamGrid > img {
+    display: flex;
+    border: none;
+    padding: 1px;
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 0;
+    min-width: 0;
+}
+.teamGrid.clickedT1,
+.teamGrid.clickedT2 {
+    box-sizing: border-box;
+    border-spacing: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teamGrid.clickedT1{
+    border: 1px solid lightblue;
+    background-color: lightblue;
+}
+.teamGrid.clickedT2 {
+    border: 1px solid lightgray;
+    background-color: lightgray;
+}
+.clickedT1.clickedT2 {
+    background: linear-gradient(to bottom right, lightgray, lightblue)
+}
+button {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 5px 10px;
+}
+
+/* Chart box styling */
+
+.chartCon {
+    border: 3px solid gray;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    padding: 10px;
+    height: 600px;
+    width: 600px;
+}
+canvas {
+    max-width: 100%;
+    max-width: 100%;
+}
+#chart {
+    max-width: 100%;
+    max-height: 100%
+}
+footer {
+    margin: 25px auto;
+    
+}
+footer > span {
+    color: black;
+    font-size: larger;
+    font-weight:bold;
+}
+
+/* Stat pop-up styling */
+
+table {
+    border-collapse: collapse;
+}
+th{
+    padding: 1px 5px;
+}
+td {
+    text-align: center;
+    padding: 1px 5px;
+}
+.top {
+    border-bottom: 1px solid black;
+}
+.middle {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+/* Modal styling */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+  
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 3px solid grey;
+    border-radius: 2px;
+    z-index: 10;
+    background-color: whitesmoke;
+    width: 600px;
+    max-width: 80%;
+}
+  
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+  
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+  
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+  
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+  
+.modal-body {
+    padding: 10px 15px;
+}
+  
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+  
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Tooltip styling */
+h3 > span {
+    color: red;
+}
+
+#tt1,
+#tt2 {
+    position: relative;
+}
+#tt1::before,
+#tt1::after,
+#tt2::before,
+#tt2::after {
+    --scale: 0;
+    --tooltips-color: lightblue;
+    --arrow-size: 10px;
+    
+    position: absolute;
+    top: -0.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition: 200ms transform;
+    transform-origin: bottom center;
+}
+#tt1::before,
+#tt2::before {
+    --translate-y: calc(-100% - var(--arrow-size));
+    
+    /* content: attr(data-tooltip1); */
+    color: black;
+    background: var(--tooltips-color);
+    font-size: 13px;
+    text-indent: 20px;
+    font-style: italic;
+    padding: 0.5rem;
+    width: 350px;
+    height: auto;
+    /* border: 2px solid grey; */
+    border-radius: 2px;
+  
+}  
+#tt1::before {
+    content: attr(data-tooltip1);
+}
+#tt2::before {
+    content: attr(data-tooltip2);
+}
+
+#tt1:hover::before,
+#tt1:hover::after,
+#tt2:hover::before,
+#tt2:hover::after {
+    --scale: 1;
+}
+#tt1::after,
+#tt2::after {
+    --translate-y: calc(-1 * var(--arrow-size));
+    content: '';
+    border: var(--arrow-size) solid transparent;
+    border-top-color: var(--tooltips-color);
+    transform-origin: top center;
+}
