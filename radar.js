@@ -1,7 +1,7 @@
 const url = 'http://127.0.0.1:5000'
 
 let year1 = null
-let year2 = null
+let year2 = null 
 let team1 = null
 let team2 = null
 

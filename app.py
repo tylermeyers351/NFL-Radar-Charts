@@ -1,4 +1,4 @@
-from helper import get_dictionaries, load_data
+from helper import get_dictionaries, load_data 
 from flask_cors import CORS
 from flask import Flask, jsonify, request, session
 
