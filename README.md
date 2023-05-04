@@ -2,4 +2,4 @@
 
 Dom Santini - Front-end (HTML/CSS/Javascript)
 
-Tyler Meyers - Back-end (Python - pandas library)
+Tyler Meyers - Back-end (Python - Pandas library)
