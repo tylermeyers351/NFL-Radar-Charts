@@ -2,7 +2,7 @@
 
 Description
 
-Group collaboration project to design and implement a website that displays nfl stats for all nfl teams from seasons 2002 through 2022. After the user inputs their team/seasons, the program displays seasonal rankings via radar chart, and further displays raw stats for a given season(e.g., points for, rushing yards, team MVP, etc.).
+Group collaboration project to design and implement a website that displays nfl stats for all nfl teams from seasons 2002 through 2022. After the user inputs their teams/seasons, the program displays seasonal rankings via radar chart, and further displays raw stats for a given team/season(e.g., points for, rushing yards, team MVP, etc.).
 
 
 
