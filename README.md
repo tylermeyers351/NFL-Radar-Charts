@@ -25,7 +25,7 @@ Visit the project website and explore NFL statistics using radar charts:
 
 [https://nflradarcharts.pythonanywhere.com/](https://nflradarcharts.pythonanywhere.com/)
 
-![Alt Image]((https://media0.giphy.com/media/yelQbR4M2wk3JkZByk/giphy.gif)https://media0.giphy.com/media/yelQbR4M2wk3JkZByk/giphy.gif)
+![Alt Image](https://media0.giphy.com/media/yelQbR4M2wk3JkZByk/giphy.gif)
 
 
 
