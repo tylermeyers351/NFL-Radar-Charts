@@ -1,27 +1,26 @@
-# nflRadarCharts 
+# nflRadarCharts
 
-Description
+## Description
 
-Group collaboration project to design and implement a website that displays nfl stats for all nfl teams from seasons 2002 through 2022. After the user inputs their teams/seasons, the program displays seasonal rankings via radar chart, and further displays raw stats for a given team/season(e.g., points for, rushing yards, team MVP, etc.).
+**nflRadarCharts** is a collaborative project designed to create a website that displays NFL statistics for all NFL teams from seasons 2002 through 2022. Users can input their preferred teams and seasons, and the program will generate seasonal rankings using radar charts. It also provides access to raw stats for a given team and season, including data such as points scored, rushing yards, and the team's MVP.
 
+## Motivation
 
+The project was born out of our collective desire to apply our knowledge of Pandas, which we acquired during a course. This project serves as a showcase of what we've learned. As a first-time collaborative coding project, it presented the perfect opportunity to combine our skills. We efficiently divided the workload based on our strengths and harnessed the Flask framework to package and host the project, which is now accessible on pythonanywhere.com.
 
-Motivation
+## Credits
 
-After taking a course that demonstrated the features of Pandas, we decided to create a project that could showcase what we learned. With this being our first-time collaborating on a coding project, we quickly learned the ins and outs of combining our code.  We were able to divide the work-load (according to our strengths) and utilized the Flask framework to wrap it all into a package that is now being displayed on pythonanywhere.com.
+- **Dom Santini**
+  - Front-end (HTML/CSS/JavaScript)
+  - Website design and usability
 
+- **Tyler Meyers**
+  - Back-end (Python + Pandas library)
+  - Data collection and manipulation
+  - Stat mapping
 
-Credit
+## Try It Out!
 
-Dom Santini
-- Front-end (HTML/CSS/Javascript)
-- Website design and usability
+Visit the project website and explore NFL statistics using radar charts:
 
-Tyler Meyers
-- Back-end (Python + Pandas library)
-- Data collection/munging & relevant stat mapping
-
-
-Try it out yourself!
-
-https://nflradarcharts.pythonanywhere.com/
+[https://nflradarcharts.pythonanywhere.com/](https://nflradarcharts.pythonanywhere.com/)
