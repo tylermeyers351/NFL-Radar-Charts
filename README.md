@@ -1,5 +1,5 @@
 # nflRadarCharts
-### Project Completion: April 2023
+Project Completion: April 2023
 
 ## Description
 
