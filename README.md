@@ -11,11 +11,11 @@ The project was born out of our collective desire to apply our knowledge of Pand
 
 ## Credits
 
-- **Dom Santini**
+- **Dom Santini** 
   - Front-end (HTML/CSS/JavaScript)
   - Website design and usability
 
-- **Tyler Meyers**
+- **Tyler Meyers** 
   - Back-end (Python + Pandas library)
   - Data collection and manipulation
   - Stat mapping
